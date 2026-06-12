@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": 38.24,
+  "std_return": 3.5717502712255795,
+  "success_rate": 1.0,
+  "avg_steps": 21.25,
+  "std_steps": 2.8613807855648994,
+  "violation_rate": 0.0,
+  "avg_violations": 0.0,
+  "collision_rate": 0.18,
+  "avg_collisions": 0.21,
+  "pickup_rate": 1.0,
+  "dropoff_rate": 1.0,
+  "algo": "q_learning",
+  "wind_mode": "observable",
+  "seed": 5,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\q_learning_observable_seed_5.npy"
+}

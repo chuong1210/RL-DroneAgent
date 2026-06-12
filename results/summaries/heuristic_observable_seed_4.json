@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": 33.99,
+  "std_return": 9.152589797428922,
+  "success_rate": 1.0,
+  "avg_steps": 19.11,
+  "std_steps": 1.999474931075656,
+  "violation_rate": 0.1,
+  "avg_violations": 0.11,
+  "collision_rate": 0.6,
+  "avg_collisions": 0.94,
+  "pickup_rate": 1.0,
+  "dropoff_rate": 1.0,
+  "algo": "heuristic",
+  "wind_mode": "observable",
+  "seed": 4,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\heuristic_observable_seed_4.npy"
+}

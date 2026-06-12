@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": -538.33,
+  "std_return": 168.92593376980338,
+  "success_rate": 0.07,
+  "avg_steps": 117.52,
+  "std_steps": 10.726117657381911,
+  "violation_rate": 0.99,
+  "avg_violations": 17.49,
+  "collision_rate": 1.0,
+  "avg_collisions": 18.41,
+  "pickup_rate": 0.59,
+  "dropoff_rate": 0.07,
+  "algo": "random",
+  "wind_mode": "observable",
+  "seed": 1,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\random_observable_seed_1.npy"
+}

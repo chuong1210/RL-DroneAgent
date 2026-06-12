@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": 35.4,
+  "std_return": 9.046546302318914,
+  "success_rate": 1.0,
+  "avg_steps": 19.02,
+  "std_steps": 2.181650751151522,
+  "violation_rate": 0.07,
+  "avg_violations": 0.09,
+  "collision_rate": 0.46,
+  "avg_collisions": 0.77,
+  "pickup_rate": 1.0,
+  "dropoff_rate": 1.0,
+  "algo": "heuristic",
+  "wind_mode": "hidden",
+  "seed": 2,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\heuristic_hidden_seed_2.npy"
+}

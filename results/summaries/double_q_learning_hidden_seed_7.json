@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": 35.53,
+  "std_return": 5.75231257843313,
+  "success_rate": 1.0,
+  "avg_steps": 19.02,
+  "std_steps": 1.720348801842231,
+  "violation_rate": 0.01,
+  "avg_violations": 0.01,
+  "collision_rate": 0.67,
+  "avg_collisions": 1.05,
+  "pickup_rate": 1.0,
+  "dropoff_rate": 1.0,
+  "algo": "double_q_learning",
+  "wind_mode": "hidden",
+  "seed": 7,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\double_q_learning_hidden_seed_7.npz"
+}

@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": 35.835,
+  "std_return": 4.953814187068384,
+  "success_rate": 1.0,
+  "avg_steps": 20.48,
+  "std_steps": 3.36,
+  "violation_rate": 0.0,
+  "avg_violations": 0.0,
+  "collision_rate": 0.56,
+  "avg_collisions": 0.81,
+  "pickup_rate": 1.0,
+  "dropoff_rate": 1.0,
+  "algo": "double_q_learning",
+  "wind_mode": "observable",
+  "seed": 0,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\double_q_learning_observable_seed_0.npz"
+}

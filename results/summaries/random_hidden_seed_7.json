@@ -1,0 +1,18 @@
+{
+  "num_episodes": 100,
+  "avg_return": -541.56,
+  "std_return": 170.787079136567,
+  "success_rate": 0.05,
+  "avg_steps": 118.53,
+  "std_steps": 7.490600776973766,
+  "violation_rate": 1.0,
+  "avg_violations": 17.56,
+  "collision_rate": 1.0,
+  "avg_collisions": 18.39,
+  "pickup_rate": 0.56,
+  "dropoff_rate": 0.05,
+  "algo": "random",
+  "wind_mode": "hidden",
+  "seed": 7,
+  "model_path": "C:\\Users\\chuon\\Downloads\\HocMay\\drone_delivery\\results\\models\\random_hidden_seed_7.npy"
+}
