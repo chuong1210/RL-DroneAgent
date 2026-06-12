@@ -26,7 +26,7 @@ Nói rõ hơn, Chương sẽ là người biến kết quả kỹ thuật thành
 
 Phần của Chương phải tạo được 3 đầu ra:
 
-### 1.1. Ứng dụng demo chạy được ✅ ĐÃ XONGAdd
+### 1.1. Ứng dụng demo chạy được ✅ ĐÃ XONG
 
 Dashboard `dashboard/app.py` đã có đầy đủ:
 

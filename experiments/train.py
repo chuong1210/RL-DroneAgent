@@ -16,9 +16,6 @@ from envs import DroneDeliveryEnv
 from experiments.io_utils import ensure_result_dirs, load_config, model_path, train_log_path, write_csv
 
 
-TRAINED_ALGOS = {"q_learning", "double_q_learning", "double_q"}
-
-
 def set_seed(seed: int):
     random.seed(seed)
     np.random.seed(seed)
@@ -99,7 +96,7 @@ def train_agent(algo: str, wind_mode: str, seed: int, config: dict, output_dir="
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--algo", required=True, choices=["random", "heuristic", "q_learning", "double_q_learning", "double_q"])
+    parser.add_argument("--algo", required=True, choices=["random", "heuristic", "q_learning", "sarsa", "double_q_learning", "double_q"])
     parser.add_argument("--wind-mode", required=True, choices=["observable", "hidden"])
     parser.add_argument("--seed", type=int, required=True)
     parser.add_argument("--config", default="experiments/configs.yaml")

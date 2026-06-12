@@ -111,7 +111,7 @@ def generate_all_plots(results_dir="results", output_dir="results/figures"):
     paths.append(bar_metric(df, "success_rate", "Success rate comparison", "Success rate", output_dir / "success_rate_comparison.png"))
     paths.append(bar_metric(df, "avg_steps", "Average steps comparison", "Average steps", output_dir / "avg_steps_comparison.png"))
     paths.append(bar_metric(df, "violation_rate", "No-fly violation rate comparison", "Violation rate", output_dir / "violation_rate_comparison.png"))
-    paths.append(bar_metric(df[df["algo"].isin(["q_learning", "double_q_learning"])] if not df.empty else df, "success_rate", "Observable vs hidden wind", "Success rate", output_dir / "observable_vs_hidden.png"))
+    paths.append(bar_metric(df[df["algo"].isin(["q_learning", "sarsa", "double_q_learning"])] if not df.empty else df, "success_rate", "Observable vs hidden wind", "Success rate", output_dir / "observable_vs_hidden.png"))
     return paths
 
 

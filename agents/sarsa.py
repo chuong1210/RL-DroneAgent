@@ -21,6 +21,7 @@ class SarsaAgent(BaseAgent):
         self._epsilon = 0.0
         self._pending_action = None
         self._pending_state = None
+        self._pending_epsilon = None
 
     def _egreedy(self, state, epsilon):
         if self.rng.random() < epsilon:
@@ -32,7 +33,15 @@ class SarsaAgent(BaseAgent):
     def select_action(self, state, epsilon=0.0):
         self._epsilon = epsilon
         state = int(state)
-        if self._pending_action is not None and self._pending_state == state:
+        # Replay the pending action only within the same episode: the state and
+        # the epsilon it was sampled with must both match, otherwise a stale
+        # action from a truncated episode could leak into the next one (or into
+        # greedy evaluation with epsilon = 0).
+        if (
+            self._pending_action is not None
+            and self._pending_state == state
+            and self._pending_epsilon == epsilon
+        ):
             action = self._pending_action
             self._pending_action = None
             return action
@@ -50,6 +59,7 @@ class SarsaAgent(BaseAgent):
             target = reward + self.gamma * self.q_table[next_state, next_action]
             self._pending_action = next_action
             self._pending_state = next_state
+            self._pending_epsilon = self._epsilon
         old_value = self.q_table[state, action]
         self.q_table[state, action] = old_value + self.alpha * (target - old_value)
 

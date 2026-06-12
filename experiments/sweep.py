@@ -19,7 +19,7 @@ from experiments.train import train_agent
 def run_sweep(config: dict, output_dir="results", episodes=None, eval_episodes=None):
     paths = ensure_result_dirs(output_dir)
     seeds = config["sweep"].get("seeds", list(range(10)))
-    algos = config["sweep"].get("algos", ["random", "heuristic", "q_learning", "double_q_learning"])
+    algos = config["sweep"].get("algos", ["random", "heuristic", "q_learning", "sarsa", "double_q_learning"])
     wind_modes = config["sweep"].get("wind_modes", ["observable", "hidden"])
     summaries = []
 

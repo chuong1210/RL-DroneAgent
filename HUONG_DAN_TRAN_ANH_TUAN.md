@@ -441,17 +441,22 @@ Dùng bar chart để cho thấy agent nào an toàn hơn.
 
 Dùng grouped bar chart cho 2 biến thể state với cùng thuật toán để cho thấy ảnh hưởng của thiếu thông tin về gió.
 
-### Tên file nên sinh
+### Tên file thực tế do `visualization/plots.py` sinh
 
 ```text
-reports/figures/
+results/figures/
   learning_curve_observable.png
   learning_curve_hidden.png
   success_rate_comparison.png
   avg_steps_comparison.png
   violation_rate_comparison.png
-  observable_vs_hidden_q_learning.png
-  observable_vs_hidden_double_q.png
+  observable_vs_hidden.png
+```
+
+Lệnh sinh:
+
+```bash
+python visualization/plots.py --results-dir results --output-dir results/figures
 ```
 
 ---

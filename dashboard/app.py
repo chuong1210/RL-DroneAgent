@@ -62,6 +62,13 @@ CSS = """
 * { box-sizing: border-box; }
 html, body, .stApp { font-family: var(--sans); }
 
+/* Streamlit's fixed header floats above the page; with the reduced
+   block-container padding it covers the hero — hide the chrome entirely. */
+header[data-testid="stHeader"],
+div[data-testid="stToolbar"],
+div[data-testid="stDecoration"],
+#MainMenu, footer { display: none !important; }
+
 .stApp {
     background:
         radial-gradient(ellipse at 12% 0%,  rgba(34, 199, 240, 0.06) 0%, transparent 42%),
